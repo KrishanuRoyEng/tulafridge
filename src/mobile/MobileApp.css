@@ -1,0 +1,144 @@
+/* MobileApp.css */
+
+.phone-frame-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 40px);
+  padding: var(--s7) var(--s4);
+  padding-top: 60px;
+}
+
+.phone-frame {
+  width: 390px;
+  height: 844px;
+  border-radius: 44px;
+  border: 2px solid var(--steel-mid);
+  box-shadow: 0 32px 64px rgba(29,31,30,0.2), 0 2px 0 rgba(255,255,255,0.15) inset;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.phone-frame__body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 42px;
+}
+
+/* Mobile app content */
+.mobile-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg);
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--s4) var(--s4) var(--s3);
+  border-bottom: var(--border);
+  flex-shrink: 0;
+}
+
+.mobile-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--s3) var(--s4);
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-tabbar {
+  display: flex;
+  border-top: var(--border);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.mobile-tab {
+  flex: 1;
+  padding: var(--s2) var(--s1);
+  font-size: 11px;
+  color: var(--mid);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  border-top: 2px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+.mobile-tab:hover { color: var(--ink); }
+.mobile-tab--active {
+  color: var(--ink);
+  font-weight: 600;
+  border-top-color: var(--col-info);
+}
+
+.mobile-footer {
+  text-align: center;
+  padding: 4px;
+  font-size: 10px;
+  color: var(--mid);
+  background: var(--bg);
+  border-top: var(--border);
+  flex-shrink: 0;
+}
+
+/* Alert items */
+.alert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  padding: var(--s2) 0;
+  border-bottom: var(--border);
+}
+.alert-item__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+.alert-item__dot--warn { background: var(--alert); }
+.alert-item__dot--ok { background: var(--accent); }
+.alert-item__dot--info { background: var(--mid); }
+
+/* Mobile card */
+.mobile-card {
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: var(--s3);
+  margin-bottom: var(--s3);
+}
+
+/* Intake bars */
+.intake-bar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  margin-bottom: var(--s2);
+}
+.intake-bar-row__label {
+  width: 32px;
+  font-size: 11px;
+  color: var(--mid);
+  flex-shrink: 0;
+}
+.intake-bar-row__bar {
+  flex: 1;
+  height: 6px;
+  background: var(--hairline);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.intake-bar-row__fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}

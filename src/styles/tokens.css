@@ -1,0 +1,92 @@
+:root {
+  /* Neutrals */
+  --bg: #F4F1EA;
+  --ink: #1D1F1E;
+  --mid: #6B6F6C;
+  --hairline: #D9D5CB;
+
+  /* Semantic palette — solid + tint */
+  --col-safe: #2F6F5E;
+  --tint-safe: #DDEBE5;
+  --col-caution: #B7791F;
+  --tint-caution: #F5E7C8;
+  --col-alert: #C8571B;
+  --tint-alert: #F6DCCF;
+  --col-cold: #5C7A8C;
+  --tint-cold: #DCE5EA;
+  --col-warm: #B5483A;
+  --tint-warm: #F2D9D4;
+  --col-info: #1F5F6B;
+  --tint-info: #D6E6E9;
+  --col-ferment: #8A6D2F;
+  --tint-ferment: #EBE1C6;
+  --col-med: #6E4A5B;
+  --tint-med: #E7DCE2;
+
+  /* Standard aliases */
+  --accent: var(--col-safe);
+  --alert: var(--col-alert);
+  --cold: var(--col-cold);
+
+  /* Storage Zones */
+  --zone-shelf3: var(--col-cold);
+  --zone-shelf3-tint: var(--tint-cold);
+  --zone-shelf2: var(--col-info);
+  --zone-shelf2-tint: var(--tint-info);
+  --zone-shelf1: var(--col-ferment);
+  --zone-shelf1-tint: var(--tint-ferment);
+  --zone-crisper: var(--col-safe);
+  --zone-crisper-tint: var(--tint-safe);
+  --zone-door: var(--col-caution);
+  --zone-door-tint: var(--tint-caution);
+  --zone-medicine: var(--col-med);
+  --zone-medicine-tint: var(--tint-med);
+
+  /* Food Category Accents */
+  --cat-cooked: #B5483A;
+  --cat-dairy: #5C7A8C;
+  --cat-produce: #2F6F5E;
+  --cat-eggs: #B7791F;
+  --cat-ferment: #8A6D2F;
+  --cat-medicine: #6E4A5B;
+
+  /* Profile Colors */
+  --profile-anita: #1F5F6B;
+  --profile-anita-tint: #D6E6E9;
+  --profile-ravi: #3A5675;
+  --profile-ravi-tint: #D8E2EC;
+  --profile-meera: #926C15;
+  --profile-meera-tint: #F2E7CD;
+  --profile-dadu: #6E4A5B;
+  --profile-dadu-tint: #E7DCE2;
+
+  /* Typography */
+  --font-ui: 'Schibsted Grotesk', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* Spacing (8px grid) */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+
+  /* Borders */
+  --border: 1px solid var(--hairline);
+  --radius: 6px;
+  --radius-sm: 3px;
+  --radius-lg: 12px;
+
+  /* Z-index layers */
+  --z-base: 0;
+  --z-overlay: 10;
+  --z-modal: 20;
+  --z-controls: 30;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-med: 200ms ease;
+}
